@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimKampi301.DataAccessLayer.Abstract
 {
-    public interface Customer :IGenericDal<Customer>
+    public interface ICustomer :IGenericDal<ICustomer>
     {
     }
 }
