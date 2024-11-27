@@ -1,2 +1,2 @@
 CSharpEgitimnKampi 301 cercevesinde N Katmanlı mimarı hakkında bir calısma yaptık.Daha sonrasında EF dbfirt ile model olusturduk, bir tur projesı uzerınde calısıyoruz once ssms'de bazı verılerımızı olusturduk ve bunları vısual studyoya migrate ettik.Hazırlanan db ıle cesitli metotlar ve sorgular atarak bir form ustunde deneyımledik.
-![Ekran Kaydım] https://github.com/enginelkurt/CSharpEgitimKampi301/blob/master/chsarpfrm.png
+![Ekran Kaydım] https://github.com/enginelkurt/CSharpEgitimKampi301/blob/master/Ders17-GorevNo3.png
