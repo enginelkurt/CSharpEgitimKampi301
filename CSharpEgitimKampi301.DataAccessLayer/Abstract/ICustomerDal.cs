@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpEgitimKampi301.EntityLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimKampi301.DataAccessLayer.Abstract
 {
-    public interface ICustomer :IGenericDal<ICustomer>
+    public interface ICustomerDal :IGenericDal<Customer>
     {
     }
 }
