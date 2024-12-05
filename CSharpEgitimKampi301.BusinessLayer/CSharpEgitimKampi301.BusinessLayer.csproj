@@ -41,12 +41,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Absract\ICategoryService.cs" />
+    <Compile Include="Absract\ICustomerService.cs" />
+    <Compile Include="Absract\IGenericService.cs" />
+    <Compile Include="Absract\IOrderService.cs" />
+    <Compile Include="Absract\IProductService.cs" />
+    <Compile Include="Concrete\CategoryManager.cs" />
+    <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\OrderManager.cs" />
+    <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSharpEgitimKampi301.DataAccessLayer\CSharpEgitimKampi301.DataAccessLayer.csproj">
       <Project>{c4e7007f-5ea9-41de-afe1-17e6dcf056ed}</Project>
       <Name>CSharpEgitimKampi301.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpEgitimKampi301.EFProject\CSharpEgitimKampi301.EFProject.csproj">
+      <Project>{3E5A2BCE-038B-4B42-A129-B5D38D3F2BE5}</Project>
+      <Name>CSharpEgitimKampi301.EFProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpEgitimKampi301.EntityLayer\CSharpEgitimKampi301.EntityLayer.csproj">
+      <Project>{5B1A7F36-03E7-4691-A0E3-BC9E8BFB2936}</Project>
+      <Name>CSharpEgitimKampi301.EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
