@@ -44,9 +44,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnList2 = new System.Windows.Forms.Button();
+            this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
+            this.cmbCategory = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,6 +59,7 @@
             this.btnGetById.TabIndex = 26;
             this.btnGetById.Text = "ID\'ye Göre Getir";
             this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // btnUpdate
             // 
@@ -67,6 +69,7 @@
             this.btnUpdate.TabIndex = 25;
             this.btnUpdate.Text = "Guncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -86,6 +89,7 @@
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtProductName
             // 
@@ -189,14 +193,6 @@
             this.label6.TabIndex = 31;
             this.label6.Text = "Kategori:";
             // 
-            // cmbCategory
-            // 
-            this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(275, 223);
-            this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(183, 24);
-            this.cmbCategory.TabIndex = 33;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -216,15 +212,31 @@
             this.btnList2.UseVisualStyleBackColor = true;
             this.btnList2.Click += new System.EventHandler(this.btnList2_Click);
             // 
+            // entityCommand1
+            // 
+            this.entityCommand1.CommandTimeout = 0;
+            this.entityCommand1.CommandTree = null;
+            this.entityCommand1.Connection = null;
+            this.entityCommand1.EnablePlanCaching = true;
+            this.entityCommand1.Transaction = null;
+            // 
+            // cmbCategory
+            // 
+            this.cmbCategory.FormattingEnabled = true;
+            this.cmbCategory.Location = new System.Drawing.Point(273, 215);
+            this.cmbCategory.Name = "cmbCategory";
+            this.cmbCategory.Size = new System.Drawing.Size(185, 24);
+            this.cmbCategory.TabIndex = 36;
+            // 
             // FrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1616, 767);
+            this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.btnList2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtProductPrice);
@@ -243,6 +255,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmProduct";
             this.Text = "FrmProduct";
+            this.Load += new System.EventHandler(this.FrmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -267,8 +280,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cmbCategory;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnList2;
+        private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
+        private System.Windows.Forms.ComboBox cmbCategory;
     }
 }
